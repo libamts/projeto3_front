@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 24px;
+    border-bottom: 2px solid black;
+    align-items: center;
+    background-color: rgba(255, 59, 0, 0.9);
+    color: #fff;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 16px;
+}
+
+header li{
+    list-style: none;
+}
+
+.Sobre > article img{
+    padding-bottom: 16px;
+    
+    width: 100%;
+}
+
+.produtos > article img {
+    
+    width: 100%;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    font-size: 26px;
+    margin-bottom: 12px;
+    border-bottom: 3px solid rgba(255, 59, 0, 0.7);
+    font-style: italic;
+}
+
+h1{
+    font-style: italic;
+}
+
+.produtos{
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 23%) ;
+    width: 100%;
+    column-gap: 2%;
+}
+
+p{
+    color: #ccc;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 32px;
+    background-color: rgba(255, 59, 0, 0.7);
+    color: #fff;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.Sobre{
+    margin: 32px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.produtos > h3{
+    padding: 10px 0;
+}
+
+article{
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.produtos > article h3{
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+@media (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+        
+    }
+    
+    .loja{
+        max-width: 1023px;
+        width: 100%;
+    }
+
+    header{
+        padding: 24px 0;
+    }
+    .Sobre{
+        display: block;
+        
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+    }
+
+  
+}
+
+@media (max-width: 640px){
+    header a {
+        display: block;
+        padding-top: 3px;
+    }
+    
+    .container{
+        max-width: 90%;
+        
+    }
+
+    .Sobre{
+        display: block;
+        
+    }
+
+    .produtos{
+        display: block;
+        padding: auto;
+    }
+
+    .produtos > article img {
+        
+        width: 100%;
+    }
+
+   
+}
